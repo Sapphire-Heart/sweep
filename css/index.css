@@ -1,0 +1,157 @@
+body,p,div{
+	margin:0;
+	padding:0;
+}
+body{
+	background:url(../imgs/827513.jpg) repeat -300px 0;
+	background-size: 71%;
+}
+.box{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+	height:320px;
+	width:320px;
+}
+.tan{
+	width:320px;
+	height:320px;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-top:-160px;
+	margin-left: -160px;
+	z-index: 99;
+	background:black;
+	text-align: center;
+	-webkit-transition: all .6s ease-in-out;
+	-webkit-transform:scale(0.1,0.1);
+	opacity: 0;
+	display: none;
+}
+.tan p:nth-child(1){
+	background:red;
+	color:white;
+	margin-top: 100px;
+	font-size: 2em;
+}
+.tan p:nth-child(2){
+	display: inline-block;
+	border:1px solid white;
+	margin-top: 30px;
+	padding:3px;
+	cursor: pointer;
+	color: white;
+}
+.tan p:nth-child(2):hover{
+	border:1px solid #00FFDC;
+	background:#00ffdc;
+	color:#fff;
+}
+.block{
+	height:12px;
+	width:12px;
+	border-top:2px solid #fff;
+	border-left:2px solid #fff;
+	border-right:2px solid #263238;
+	border-bottom:2px solid #263238;
+	float: left;
+	font-size: 0.7rem;
+	background: #90a4ae;
+	text-align: center;
+	line-height: 12px;
+	color: #00FFDC;
+	opacity: 0.8;
+}
+.black{
+	background:url(../imgs/bom.jpg) no-repeat;
+	background-size: 12px 12px;
+	width: 12px;
+	height: 12px;
+	animation: first 2s ease;
+	animation-iteration-count:2;
+	opacity: 1;
+}
+@media (min-width:640px) {
+	.box{
+		height:600px;
+		width:600px;
+	}
+	.tan{
+		width:600px;
+		height:600px;
+		margin-top:-300px;
+		margin-left: -300px;
+	}
+	.tan p:nth-child(1){
+		background:red;
+		color:white;
+		margin-top: 200px;
+		font-size:3em;
+	}
+	.tan p:nth-child(2){
+		display: inline-block;
+		border:3px solid white;
+		margin-top: 50px;
+		padding:3px;
+		cursor: pointer;
+		color: white;
+	}
+	.tan p:nth-child(2):hover{
+		border:3px solid #00FFDC;
+		background:#00ffdc;
+		color:#fff;
+	}
+	.block{
+		height:26px;
+		width:26px;
+		border-top:2px solid #fff;
+		border-left:2px solid #fff;
+		border-right:2px solid #263238;
+		border-bottom:2px solid #263238;
+		float: left;
+		font-size: 1.2rem;
+		background: #90a4ae;
+		text-align: center;
+		line-height: 26px;
+		color: #00FFDC;
+		opacity: 0.8;
+	}
+	.black{
+		background:url(../imgs/bom.jpg) no-repeat;
+		background-size: 26px 26px;
+		width:26px;
+		height: 26px;
+		animation: first 2s ease;
+		animation-iteration-count:2;
+		opacity: 1;
+	}
+}
+
+@keyframes first{
+	0,100%{
+		transform: scale(1,1);
+	}
+	50%{
+		transform: scale(1.4,1.4);
+	}
+}
+.blue-grey1{
+	background: #78909c;
+	opacity: 0.8;
+}
+.blue-grey{
+	background: #607d8b;
+	opacity: 0.8;
+}
+.blue-grey2{
+	background: #90a4ae;
+	opacity: 0.8;
+}
+.blue-grey3{
+	background: #b0bec5;
+	opacity: 0.8;	
+}
